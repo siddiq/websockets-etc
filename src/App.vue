@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -8,7 +7,6 @@ import HelloWorld from './components/HelloWorld.vue'
     <!-- Sidebar -->
     <aside class="w-64 bg-gray-800 text-white flex-shrink-0">
       <div class="p-4 text-2xl font-bold">
-        <!-- Optional: Sidebar Logo or Title -->
         <h1>My App</h1>
       </div>
       <nav class="px-4 py-2">
@@ -19,25 +17,15 @@ import HelloWorld from './components/HelloWorld.vue'
             </router-link>
           </li>
           <li class="mb-2">
-            <router-link to="/webrtc" class="block px-4 py-2 rounded hover:bg-gray-700">
-              WebRTC
-            </router-link>
-          </li>
-          <li class="mb-2">
             <router-link to="/websockets" class="block px-4 py-2 rounded hover:bg-gray-700">
               WebSockets
             </router-link>
           </li>
-          <!-- <li class="mb-2">
-            <router-link to="/canvas" class="block px-4 py-2 rounded hover:bg-gray-700">
-              Canvas API
+          <li class="mb-2">
+            <router-link to="/webrtc" class="block px-4 py-2 rounded hover:bg-gray-700">
+              WebRTC
             </router-link>
           </li>
-          <li class="mb-2">
-            <router-link to="/webgl" class="block px-4 py-2 rounded hover:bg-gray-700">
-              WebGL
-            </router-link>
-          </li> -->
           <li class="mb-2">
             <router-link to="/about" class="block px-4 py-2 rounded hover:bg-gray-700">
               About
@@ -51,7 +39,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="flex-grow bg-gray-100">
       <!-- Optional App Bar -->
       <header class="bg-white shadow py-4 px-6">
-        <h1 class="text-xl font-bold">Demo</h1>
+        <h1 class="text-xl font-bold">Demo2</h1>
       </header>
 
       <!-- Router View -->

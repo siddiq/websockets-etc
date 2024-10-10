@@ -62,3 +62,11 @@ npm run test:e2e -- --debug
 ```sh
 npm run lint
 ```
+
+### test lazy loading in prod build
+
+```
+npm run build
+cd dist
+npx http-server
+```
