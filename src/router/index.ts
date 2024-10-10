@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import WebRTCView from '@/views/WebRTCView.vue'
+import WebsocketsView from '@/views/WebsocketsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +10,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/webrtc',
+      name: 'webrtc',
+      component: WebRTCView
+    },
+    {
+      path: '/websockets',
+      name: 'websockets',
+      component: WebsocketsView
     },
     {
       path: '/about',

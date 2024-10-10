@@ -1,15 +1,29 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="about-page p-8">
+    <h1 class="text-4xl font-bold mb-4">About This App</h1>
+    <p class="text-lg mb-6">
+      Welcome to my app! This project is a demo of some cool techs like Vue.js, Tailwind and an
+      attempt to show skills with other web techs.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+    <ul class="list-disc pl-6 mb-6">
+      <li class="mb-2">
+        Real-time communication with <strong>WebRTC</strong> and <strong>WebSockets</strong>.
+      </li>
+      <li class="mb-2">
+        Interactive graphics and animations using <strong>Canvas API</strong> and
+        <strong>WebGL</strong>.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-4">Why This Project?</h2>
+    <p class="text-lg mb-6">
+      I just quicky built this to showcase my skills in modern web technologies.
+    </p>
+
+    <footer class="text-sm text-gray-500 mt-8">&copy; 2024 Siddiq. All rights reserved.</footer>
+  </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<style scoped></style>
