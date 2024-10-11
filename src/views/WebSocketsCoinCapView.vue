@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold mb-6">Crypto Price Tracker</h1>
 
     <!-- Bitcoin -->
-    <div class="bg-blue-100 p-4 mb-4 rounded-lg shadow">
+    <div class="bg-neutral p-4 mb-4 border">
       <h2 class="text-lg font-semibold">Bitcoin (BTC)</h2>
       <p class="text-2xl font-bold" data-test-id="btc-price">
         {{ btcPrice ? btcPrice + ' USD' : 'waiting for data' }}
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Ethereum -->
-    <div class="bg-green-100 p-4 rounded-lg shadow">
+    <div class="bg-neutral p-4 border">
       <h2 class="text-lg font-semibold">Ethereum (ETH)</h2>
       <p class="text-2xl font-bold" data-test-id="eth-price">
         {{ ethPrice ? ethPrice + ' USD' : 'waiting for data' }}
