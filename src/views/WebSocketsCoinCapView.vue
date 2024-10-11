@@ -5,13 +5,17 @@
     <!-- Bitcoin -->
     <div class="bg-blue-100 p-4 mb-4 rounded-lg shadow">
       <h2 class="text-lg font-semibold">Bitcoin (BTC)</h2>
-      <p class="text-2xl font-bold">{{ btcPrice }} USD</p>
+      <p class="text-2xl font-bold" data-test-id="btc-price">
+        {{ btcPrice ? btcPrice + ' USD' : 'waiting for data' }}
+      </p>
     </div>
 
     <!-- Ethereum -->
     <div class="bg-green-100 p-4 rounded-lg shadow">
       <h2 class="text-lg font-semibold">Ethereum (ETH)</h2>
-      <p class="text-2xl font-bold">{{ ethPrice }} USD</p>
+      <p class="text-2xl font-bold" data-test-id="eth-price">
+        {{ ethPrice ? ethPrice + ' USD' : 'waiting for data' }}
+      </p>
     </div>
   </div>
 </template>
