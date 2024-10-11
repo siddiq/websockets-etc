@@ -8,14 +8,3 @@
     </p>
   </main>
 </template>
-
-<style scoped>
-.home-page {
-  line-height: 1.75;
-}
-
-h1,
-h2 {
-  color: #333;
-}
-</style>

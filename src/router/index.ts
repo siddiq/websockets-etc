@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WebRTCView from '@/views/WebRTCView.vue'
-import WebSocketsView from '@/views/WebSocketsView.vue'
+import WebSocketsCoinCapView from '@/views/WebSocketsCoinCapView.vue'
+import WebSocketsEchoView from '@/views/WebSocketsEchoView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -12,9 +13,14 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/websockets',
-      name: 'websockets',
-      component: WebSocketsView
+      path: '/websockets-coincap',
+      name: 'websockets-coincap',
+      component: WebSocketsCoinCapView
+    },
+    {
+      path: '/websockets-echo',
+      name: 'websockets-echo',
+      component: WebSocketsEchoView
     },
     {
       path: '/webrtc',

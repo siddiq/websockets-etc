@@ -69,29 +69,4 @@ onBeforeUnmount(() => {
     websocket.close()
   }
 })
-
-// WebSocket initialization for CoinCap API
-onMounted(() => {
-  websocket = new WebSocket('wss://ws.coincap.io/prices?assets=bitcoin,ethereum')
-
-  websocket.onopen = () => {
-    console.log('WebSocket connected to CoinCap')
-  }
-
-  websocket.onmessage = (event) => {
-    console.log('messsage hjappen')
-    const data = JSON.parse(event.data)
-    messages.value.push(`BTC: ${data.bitcoin}, ETH: ${data.ethereum}`)
-  }
-
-  websocket.onerror = (error) => {
-    console.error('WebSocket error:', error)
-  }
-
-  websocket.onclose = () => {
-    console.log('WebSocket connection closed')
-  }
-})
 </script>
-
-TODO: remove thje echo thing... lets use price api
